@@ -1,0 +1,22 @@
+{
+  "name": "ellipse-pass-predictor",
+  "version": "1.0.0",
+  "description": "Two-body elliptical orbit propagation and ground-station visibility window backend (fictional model, spherical Earth).",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "bin": {
+    "satpass": "dist/cli/index.js"
+  },
+  "scripts": {
+    "start": "node src/server/index.ts",
+    "serve": "node src/server/index.ts",
+    "cli": "node src/cli/index.ts",
+    "test": "node --test --test-reporter=spec test/*.test.ts",
+    "demo": "node scripts/demo.ts",
+    "clean": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/clean.ps1"
+  },
+  "license": "MIT"
+}
